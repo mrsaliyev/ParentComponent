@@ -1,0 +1,11 @@
+<div class="container">
+<div class="row">
+  <p>{{message}}</p>
+  <div class="col">
+    <app-add-record (childEvent)="message=$event"></app-add-record>
+  </div>
+  <div class="col">
+    <app-result [parentData]="message"></app-result>
+  </div>
+</div>
+</div>
